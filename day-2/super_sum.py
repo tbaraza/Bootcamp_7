@@ -16,4 +16,3 @@ def super_sum(A):
     return total
 
 
-print super_sum([10, 20, 30])
