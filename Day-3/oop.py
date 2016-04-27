@@ -1,17 +1,9 @@
-class Person:
-    people_count = 0  # class variable
+from person import Person
+from kenyan import Kenyan
 
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-        Person.people_count += 1
-
-    def __repr__(self):
-        return " <{}, {}>".format(self.name, self.age)
-
-    def say_hello(self):
-        return "Hello, I am {} and {} y/o".format(self.name, self.age)
-
+#class methods
+# mixin
+# instance variables vs class variables
 
 p = Person('Likey', 29)
 print p.name
@@ -37,3 +29,12 @@ print b
 
 for person in b:
     print person.say_hello()
+
+# making age optional:
+# set age=0
+# in init use an if statement
+
+k = Kenyan('Anita', 40)
+k.probe(False)
+print "Is {} corrupt? {}".format(k.name, k.is_corrupt())
+print k.say_hello()
