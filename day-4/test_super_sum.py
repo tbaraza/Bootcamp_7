@@ -15,6 +15,7 @@ class SuperSumTestCase(TestCase):
     def test_string_input_returns(self):
         """Test string input type"""
         self.assertEqual(super_sum("string"), 0)
+        self.assertEqual(super_sum("string"), 0)
 
     def test_sum_of_integers(self):
         """Test sum of integers"""
